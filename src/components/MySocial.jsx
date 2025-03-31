@@ -16,7 +16,7 @@ const users = [
       {
         postId: 101,
         postTitle: "Hello Java",
-        postPicture: "Java.jpg",
+        postPicture: user1,
       },
     ],
     requests: [],
@@ -30,7 +30,7 @@ const users = [
       {
         postId: 102,
         postTitle: "Hello JavaScript",
-        postPicture: "JavaScript.jpg",
+        postPicture: user2,
       },
     ],
     requests: [],
@@ -44,7 +44,7 @@ const users = [
       {
         postId: 103,
         postTitle: "Coding is Fun",
-        postPicture: "Coding.jpg",
+        postPicture: user3,
       },
     ],
     requests: [],
@@ -58,7 +58,7 @@ const users = [
       {
         postId: 104,
         postTitle: "Hello i'm a Full Stack Developer",
-        postPicture: "FSD.jpg",
+        postPicture: user4,
       },
     ],
     requests: [],
@@ -72,7 +72,7 @@ const users = [
       {
         postId: 105,
         postTitle: "Hello i'm a Python Developer",
-        postPicture: "PD.jpg",
+        postPicture: user5,
       },
     ],
     requests: [],
