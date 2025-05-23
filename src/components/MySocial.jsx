@@ -86,12 +86,15 @@ let globalFriends = []; // Stores accepted friends
 
 const MySocial = () => {
   const [userId, setUserId] = useState("");
+  
   const [loggedInUser, setLoggedInUser] = useState(null);
+
   const [modalContent, setModalContent] = useState(null);
   const [sentRequests, setSentRequests] = useState([]); // Sent friend requests
   const [pendingRequests, setPendingRequests] = useState([]); // Received friend requests
   const [friends, setFriends] = useState([]); // Friends list
-
+  
+  
   const handleLogin = () => {
     const user = users.find((u) => u.id === parseInt(userId));
     if (user) {
@@ -193,14 +196,16 @@ const MySocial = () => {
 
   {
     unfriendMessage && (
-      <div className="alert alert-warning">{unfriendMessage}</div>
+      <div className="alert alert-warning sticky-top">{unfriendMessage}</div>
     );
   }
+
+  
 
   return (
     <>
       {/* Navbar */}
-      <nav class="navbar navbar-dark bg-dark">
+      <nav className="navbar navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
             MySocial
@@ -235,7 +240,7 @@ const MySocial = () => {
                   onChange={(e) => setUserId(e.target.value)}
                 />
                 <button
-                  className="btn btn-dark w-25 mt-2 mb-2"
+                  className="btn btn-dark mt-2 mb-2 w-100"
                   onClick={handleLogin}
                 >
                   Login
